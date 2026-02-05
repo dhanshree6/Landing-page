@@ -1,0 +1,33 @@
+@include max(d-820) {
+
+    .subsection {
+
+        .second {
+            flex-direction: column;
+
+            .box {
+                &:hover {
+                    // background: #fff;
+                    transform: none;
+                }
+
+                max-width: 100% !important;
+
+                .left {
+                    opacity: 1 !important;
+                    // transform: translateX(0);
+                }
+
+                .right {
+                    // transform: translateX(rem(20px));
+
+                    .content {
+                        p {
+                            opacity: 1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

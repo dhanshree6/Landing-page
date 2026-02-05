@@ -1,0 +1,109 @@
+@include max(d-820) {
+  .home {
+     
+    .content {
+      flex-direction: column;
+      text-align: center;
+      gap: rem(10px) !important;
+
+    }
+
+    .div1 {
+      align-items: center;
+      max-width: 100%;
+
+      h1 {
+        font-size: rem(44px);
+      }
+
+      p {
+        font-size: rem(15px);
+      }
+    }
+
+    .div2 {
+      max-width: 100%;
+      margin-inline: none;
+    }
+
+    #myform {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding-block: mrem(61px);
+     
+    .bgimage {
+      top: 0;
+    }
+
+    .content {
+      // gap: rem(30px);
+      gap: mrem(140px);  
+  
+    .div1 {
+      max-width: 100% !important;
+      h1 {
+        //font-size: 25px !important;
+        line-height: 1.2;
+        max-width: mrem(896px);
+        font-size: mrem(64px);
+      }
+
+      p {
+        //font-size: rem(25px) !important;
+        font-size: mrem(16px);
+        margin-bottom: mrem(30px);
+      }
+
+      .apply {
+        width: 100%;
+        max-width: mrem(182px);
+      }
+    }
+
+    .div2 {
+      padding-inline: 0;
+      max-width: 100% !important;
+      height: mrem(578px);
+    
+
+    #myform {
+      padding: mrem(12px);
+      border-radius: mrem(12px);
+
+    //   .row {
+    //     flex-direction: column;
+    //   }
+
+    label {
+              font-size: mrem(12px);
+              margin-bottom: mrem(4px);
+            }
+      input {
+        font-size: rem(14px);
+        padding: mrem(10px);
+        margin-bottom: mrem(15px);
+        border: mrem(1px) solid #ccc;
+        border-radius: mrem(6px);
+      }
+
+      .row {
+              display: flex;
+              gap: mrem(12px);
+            }
+
+            .btn {
+              border: none;
+              padding: mrem(12px);
+              border-radius: mrem(30px);
+              margin-top: mrem(10px);
+            }
+    }
+  }
+  }
+}
+}

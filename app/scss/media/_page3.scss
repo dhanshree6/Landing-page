@@ -1,0 +1,15 @@
+@include max(d-820) {
+
+    .subsection{
+       
+        flex-direction: column;
+
+        .left{
+            max-width: 100% !important;
+    }
+
+    .right{
+        max-width: 100% !important;
+    }
+}
+}

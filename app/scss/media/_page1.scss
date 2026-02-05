@@ -1,0 +1,17 @@
+@include max(d-768) {
+
+    .subsection {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 100%;
+
+        .left {
+            max-width: 100% !important;
+        }
+
+        .right {
+            max-width: 100% !important;
+        }
+    }
+}

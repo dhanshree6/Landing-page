@@ -1,0 +1,146 @@
+/* Variables */
+$primary-red: #b22222;
+$white: #ffffff;
+$overlay-color: rgba(178, 34, 34, 0.6);
+
+.home{
+  // min-height: rem(700px);
+  position: relative;
+  padding-block: rem(61px);
+  .bgimage {
+    position: absolute;
+    top: rem(100px);
+    inset: 0;
+    background: url("../images/bg.webp") center / cover no-repeat;
+    z-index: 0;
+    // height: rem(700px);
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: $overlay-color;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .subsection {
+      
+      .content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(140px);
+
+        .div1 {
+          max-width: 50%;
+          color: $white;
+          display: flex;
+          flex-direction: column;
+
+          h1 {
+            max-width: rem(896px);
+            color: $white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: rem(64px);
+            line-height: 1;
+            letter-spacing: 0;
+            margin-bottom: rem(20px);
+
+          }
+
+          p {
+            font-size: rem(16px);
+            margin-bottom: rem(30px);
+            line-height: 1.6;
+            color: #ffffff;
+          }
+
+          .apply {
+            max-width: rem(182px);
+            // max-height: rem(56px);
+            border-radius: rem(60px);
+            background: transparent;
+            border: rem(1px) solid $white;
+            color: $white;
+            cursor: pointer;
+          }
+        }
+
+        .div2 {
+          display: flex;
+          align-items: center;
+          max-width: 50%;
+          // height: rem(366px);
+          // margin-left: rem(20px);
+          // margin-top: rem(50px);
+          // gap: rem(64px);
+          // margin-inline: rem(32px);
+          height: rem(578px);
+
+
+          #myform {
+            // width: rem(420px);
+            background: $white;
+            border-radius: rem(12px);
+            display: flex;
+            flex-direction: column;
+            padding: rem(15px);
+
+            h2 {
+              text-align: center;
+              margin-bottom: rem(5px);
+            }
+
+            h4 {
+              text-align: center;
+              font-size: rem(14px);
+              margin-bottom: rem(20px);
+              color: #666;
+            }
+
+            label {
+              font-size: rem(12px);
+              margin-bottom: rem(4px);
+            }
+
+            input {
+              width: 100%;
+              padding: rem(10px);
+              margin-bottom: rem(15px);
+              border: rem(1px) solid #ccc;
+              border-radius: rem(6px);
+            }
+
+            .row {
+              display: flex;
+              gap: rem(12px);
+
+              .field {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+              }
+            }
+
+            .btn {
+              background: $primary-red;
+              color: $white;
+              border: none;
+              padding: rem(12px);
+              border-radius: rem(30px);
+              cursor: pointer;
+              margin-top: rem(10px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
