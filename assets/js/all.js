@@ -1,0 +1,1 @@
+!function(t){"use strict";console.log("Script loaded!"),t(document).ready(function(){t(".slider").slick({slidesToShow:1,slidesToScroll:1,infinite:!0,arrows:!0,dots:!1,prevArrow:'<button class="prev" type="button">←</button>',nextArrow:'<button class="next" type="button">→</button>'})})}.call(window,window.jQuery);
