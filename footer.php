@@ -1,3 +1,11 @@
+   <div class="footer">
+    <div class="container">
+        <div class="content">
+          <h6>© 2023 Svakarma Finance, All Rights Reserved.</h6>
+        </div>
+    </div>
+   </div>
+  
   <!-- ------------JQuery CDN------- -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- _________________slider js_______________ -->

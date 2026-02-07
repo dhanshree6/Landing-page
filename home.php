@@ -7,36 +7,52 @@
         <div class="subsection">
             <div class="content">
             <div class="div1">
-                <h1>Power Your Business With Scalable Solar financing</h1>
-                <p>Sreamline your solar projects with fast approvals and flexible financing solutions.
+                <h1 class="main-heading">Power Your Business With Scalable Solar financing</h1>
+                <p class="banner-para">Sreamline your solar projects with fast approvals and flexible financing solutions.
                 </p>
-                <button class="apply">
+                <button class="btn">
                     Apply Now
                 </button>
             </div>
             <div class="div2">
+                <p class="para1">Get in touch</p>
+                <p class="para2">We'd love to hear from you. Please fill out form.</p2>
                 
-                 <form action="post" id="myform">
-                    <h2>Get in touch</h2>
-                    <h4>We'd love to hear from you. Please fill out form.</h4>
-                    <div class="row">
-                      <div class="field">
-                        <lable for="fname">First Name</lable>
-                      <input type="text" class="fname" ame="fname">
-                      </div>
-                      <div class="field">
-                        <lable for="lname">Last Name</lable>
-                      <input type="text" class="lname" name="lname">
-                      </div>
+                 <form method="post" id="myform">
+                  <div class="row">
+
+                    <div class="field">
+                      <label>First Name</label>
+                      <input type="text" id="fname" name="fname">
+                      <small class="msg"></small>
                     </div>
-                    <lable for="mobile">Mobile</lable>
-                      <input type="phone" class="mobile" name="phone">
-                      <lable for="email">Email</lable>
-                      <input type="email" class="email" name="email">
-                      <input type="submit" class="btn">
-                 </form>
+
+                    <div class="field">
+                      <label>Last Name</label>
+                      <input type="text" id="lname" name="lname">
+                      <small class="msg"></small>
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+                    <label>Mobile</label>
+                    <input type="text" id="mobile" name="phone">
+                    <small class="msg"></small>
+                  </div>
+
+                  <div class="field">
+                    <label>Email</label>
+                    <input type="email" id="email" name="email">
+                    <small class="msg"></small>
+                  </div>
+
+                  <input type="submit" class="btn" value="Submit">
+                </form>
+
             </div>
         </div>
         </div>
     </section>
 </main>
+

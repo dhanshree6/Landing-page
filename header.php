@@ -13,14 +13,16 @@
     <title>Gulp V3</title>
     
     <!-- _____________Theme____________ -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
     <!-- _____________custom css____________ -->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
 <header class="header">
-  <div class="logo-wrapper">
+ <div class="container">
+   <div class="logo-wrapper">
     <img src="assets/images/Layer_1.webp" alt="logo">
   </div>
+ </div>
 </header>

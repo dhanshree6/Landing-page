@@ -11,7 +11,7 @@
             </div>
 
             <div class="content">
-              <h2>Vinod Patel</h2>
+              <p>Vinod Patel</p>
               <p class="company">Proprietor</p>
               <div class="stars"></div>
               <p class="text">
@@ -30,7 +30,7 @@
             </div>
 
             <div class="content">
-              <h2>Suresh Agarwal</h2>
+              <p>Suresh Agarwal</p>
               <p class="company">Xx Company</p>
               <div class="stars">★★★★★</div>
               <p class="text">
