@@ -1,15 +1,14 @@
-.header {
-  height: rem(100px);
-
+.header{
+   height: 100%;
+  .container{ 
   .logo-wrapper {
-    height: 100%;
-    display: flex;          
-    align-items: center;    
-    margin-left: rem(100px);
-
+     height: rem(100px);
     img {
-      max-width: rem(270px);
+      width: rem(250px);
+      height: 100%;
       display: block;
+      padding: rem(18px);
     }
   }
+}
 }

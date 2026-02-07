@@ -3,26 +3,32 @@
      
     .content {
       flex-direction: column;
-      text-align: center;
       gap: rem(10px) !important;
 
     }
 
     .div1 {
       align-items: center;
-      max-width: 100%;
+      max-width: 100% !important;
 
-      h1 {
-        font-size: rem(44px);
+      .main-heading {
+        font-size: mrem(44px);
+        text-align: center;
       }
 
-      p {
-        font-size: rem(15px);
+      .banner-para {
+        font-size: mrem(20px);
+        text-align: center;
       }
+
+       .apply {
+            border-radius: rem(30px) ;
+
+          }
     }
 
     .div2 {
-      max-width: 100%;
+      max-width: 100% !important;
       margin-inline: none;
     }
 
@@ -32,78 +38,117 @@
   }
 }
 
-@media (max-width: 600px) {
-  .home {
-    padding-block: mrem(61px);
-     
-    .bgimage {
-      top: 0;
+@include max(d-600) {
+.home {
+  // min-height: rem(700px);
+  position: relative;
+  padding-block: rem(61px);
+
+  .bgimage {
+    position: absolute;
+    top: rem(100px);
+    inset: 0;
+    background: url("../images/bg.webp") center / cover no-repeat;
+    z-index: 0;
+    // height: rem(700px);
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: $overlay-color;
     }
+  }
 
-    .content {
-      // gap: rem(30px);
-      gap: mrem(140px);  
-  
-    .div1 {
-      max-width: 100% !important;
-      h1 {
-        //font-size: 25px !important;
-        line-height: 1.2;
-        max-width: mrem(896px);
-        font-size: mrem(64px);
-      }
+  .container {
 
-      p {
-        //font-size: rem(25px) !important;
-        font-size: mrem(16px);
-        margin-bottom: mrem(30px);
-      }
 
-      .apply {
-        width: 100%;
-        max-width: mrem(182px);
-      }
-    }
+    .subsection {
 
-    .div2 {
-      padding-inline: 0;
-      max-width: 100% !important;
-      height: mrem(578px);
-    
+      .content {
 
-    #myform {
-      padding: mrem(12px);
-      border-radius: mrem(12px);
+        .div1 {
+          justify-content: left;
+          .main-heading {
+            font-size: mrem(50px);
+            margin-bottom: mrem(20px);
 
-    //   .row {
-    //     flex-direction: column;
-    //   }
+          }
 
-    label {
+         .banner-para {
+            font-size: mrem(26px);
+            margin-bottom: mrem(30px);
+
+          }
+
+          .apply {
+            max-width: mrem(182px);
+            height: mrem(56px);
+            border-radius: mrem(60px);
+            border: rem(0.5px) solid #D0D5DD;
+            padding: mrem(15px) mrem(30px);
+            font-size: mrem(22px);
+            margin-bottom: mrem(20px);
+          }
+        }
+
+        .div2 {
+          border-radius: mrem(24px);
+          padding-inline: mrem(20px);
+          padding-block: mrem(30px) mrem(50px);
+
+          .para1 {
+            margin-bottom: mrem(20px);
+            font-size: mrem(32px);
+            line-height: mrem(44px);
+
+          }
+
+          .para2 {
+            font-size: mrem(16px);
+            margin-bottom: mrem(30px);
+            line-height: mrem(30px);
+            font-size: mrem(20px);
+          }
+
+          #myform {
+
+            label {
               font-size: mrem(12px);
-              margin-bottom: mrem(4px);
             }
-      input {
-        font-size: rem(14px);
-        padding: mrem(10px);
-        margin-bottom: mrem(15px);
-        border: mrem(1px) solid #ccc;
-        border-radius: mrem(6px);
-      }
 
-      .row {
+            input {
+              border: mrem(1px) solid #ccc;
+              border-radius: mrem(5px);
+              gap: mrem(8px);
+              border-radius: mrem(8px);
+              border-width: mrem(1px);
+              padding: mrem(10px) mrem(14px);
+
+            }
+
+            .row {
               display: flex;
-              gap: mrem(12px);
+              gap: rem(32px);
+
+              .field {
+                margin-bottom: mrem(24px);
+              }
+            }
+
+            .field {
+               margin-bottom: mrem(24px);
+
             }
 
             .btn {
-              border: none;
               padding: mrem(12px);
               border-radius: mrem(30px);
-              margin-top: mrem(10px);
+              margin-top: mrem(32px);
             }
+          }
+        }
+      }
     }
-  }
   }
 }
 }

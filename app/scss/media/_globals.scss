@@ -1,18 +1,18 @@
-@include max(d-1400) {
-    html,
-    body {
-        $rem-size: 16px;
-        font-size: $rem-size;
-    }
-    // .container,
-    // .container-lg,
-    // .container-md,
-    // .container-sm,
-    // .container-xl,
-    // .container-xxl {
-    //     max-width: rem(calc(1088px + 24px));
-    // }
-}
+// @include max(d-1400) {
+//     html,
+//     body {
+//         $rem-size: 16px;
+//         font-size: $rem-size;
+//     }
+//     // .container,
+//     // .container-lg,
+//     // .container-md,
+//     // .container-sm,
+//     // .container-xl,
+//     // .container-xxl {
+//     //     max-width: rem(calc(1700px + 24px));
+//     // }
+// }
 
 @include max(d-1920) {
     html,
@@ -25,63 +25,66 @@
 @include max(d-1680) {
     html,
     body {
-        $rem-size: 18px;
+        $rem-size: 16px;
         font-size: $rem-size;
     }
 }
 @include max(d-1440) {
-    html,
-    body {
-        $rem-size: 12px;
-        font-size: $rem-size;
-    }
-}
-@include max(d-1400) {
+   
     html,
     body {
         $rem-size: 14px;
         font-size: $rem-size;
     }
 }
+
 @include max(d-1280) {
-    .container{
-        padding-inline: 50px;
-    }
     html,
     body {
-        $rem-size: 11x;
+        $rem-size: 12px;
         font-size: $rem-size;
     }
 }
-@include max(d-1024) {
-    .conatiner{
-        padding-inline: 22px;
+@include max(d-1200) {
+    html,
+    body {
+        $rem-size: 10x;
+        font-size: $rem-size;
     }
+}
+
+@include max(d-1024) {
     html,
     body {
        $rem-size: 9px;
-       dth: 100; 
+    //    dth: 100; 
        font-size: $rem-size;
     }
 }
 @include max(d-991) {
     html,
     body {
-        $rem-size: 8px;
+        $rem-size: 9px;
         font-size: $rem-size;
     }
 }
 
-// @include max(d-600) {
-//     .container{
-//         padding-inline: 22px;
-//     }
-//     html,
-//     body {
-//         $rem-size: 6px;
-//         font-size: $rem-size;
-//     }
-// }
+@include max(d-820) {
+    html,
+    body {
+        $rem-size: 13px;
+        font-size: $rem-size;
+    }
+}
+
+@include max(d-768) {
+   
+    html,
+    body {
+        $rem-size: 16px;
+        font-size: $rem-size;
+    }
+}
 
 // @include max(d-480) {
 //     .container{

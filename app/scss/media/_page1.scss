@@ -1,17 +1,125 @@
-@include max(d-768) {
 
+@include max(d-1280){
+    .subsection {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: rem(16px);
+            padding-top: rem(80px);
+            gap: rem(23px);
+
+            .left {
+                max-width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: rem(16px);
+
+                .about-heading{
+                    max-width: 90%;
+                }
+             .aboutsuryakiran-para{
+                   max-width: 80%;
+                   color:#232323;
+                   font-size: rem(22px);
+                }
+
+            }
+
+}
+}
+
+@include max(d-820) {
+ .page1 {
+    margin-block: mrem(80px);
     .subsection {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         max-width: 100%;
+        // padding-top: rem(30px);
 
         .left {
             max-width: 100% !important;
+
+            .aboutsuryakiran-para{
+                   max-width: 80%;
+                   color:#232323;
+                   font-size: rem(24px);
+
+                }
         }
 
         .right {
             max-width: 100% !important;
         }
     }
+}
+}
+
+@include max(d-600){
+    .page1 {
+    margin-block: mrem(50px);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .page-heading {
+            margin-bottom: mrem(8px);
+            font-size: mrem(18px); 
+
+        }
+
+        .line {
+            height: mrem(2px);
+            border: mrem(1px) solid #DE3338;
+            margin-bottom: mrem(30px);
+        }
+
+        .subsection {
+            gap: mrem(16px);
+            padding-top: mrem(20px);
+            gap: mrem(23px);
+
+            .left {
+                gap: mrem(16px);
+
+                .about-heading{
+                  font-size: mrem(35px);   
+                }
+
+                .aboutsuryakiran-para{
+                    font-size: mrem(24px);
+                    max-width: 100%;
+                }
+
+            }
+
+            .right {
+                gap: mrem(60px);
+                margin-top: mrem(40px);
+
+                .box {
+                    max-width: mrem(193px);
+                    max-height: mrem(115px);
+                    .number {
+                        font-size: mrem(40px);
+
+                    }
+
+                    .small-heading {
+                        font-size: mrem(22px);
+                        font-size: mrem(15px)
+                    }
+
+                    &:not(:last-child)::after {
+                        content: "";
+                        right: mrem(-30px);
+                         width: mrem(2px);
+                    }
+
+                }
+            }
+        }
+    }
+}
 }

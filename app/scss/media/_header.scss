@@ -1,13 +1,16 @@
 @include max(d-600){
-    .header {
-  height: mrem(100px);
-
-  .logo-wrapper {  
-    margin-left: mrem(100px);
-
+.header{
+   height: 100%;
+  .container{ 
+  .logo-wrapper {
+     height: mrem(90px);
     img {
-      max-width: mrem(270px);
+      width: mrem(200px);
+      height: 100%;
+      display: block;
+      padding: mrem(18px);
     }
   }
+}
 }
 }

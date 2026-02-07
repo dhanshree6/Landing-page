@@ -3,7 +3,7 @@
     // height: rem(800px);
 
     .container {
-         padding-block: rem(53px);
+        padding-block: rem(53px);
 
         h6 {
             color:#E21E248C;
@@ -15,7 +15,7 @@
         }
 
         .line {
-            width: 100%;
+            max-width: 100%;
             height: rem(2px);
             border: rem(1px) solid #DE3338;
             margin-bottom: rem(50px);
@@ -69,7 +69,7 @@
                     align-items: flex-start;
 
                     .left {
-                        width: rem(55px);
+                        max-width: rem(55px);
                         display: flex;
                         align-items: center; // 🔥 vertical center
                         justify-content: center;

@@ -28,10 +28,16 @@ $font-size-base: 16px; // this value depend on perent div font size
     $vh-ratio: calc($px / $vh-context) * 100vh;
     @return calc(min($vw-ratio, $vh-ratio));
 }
+// @function mrem($px) {
+//     $vw-context: 375px;
+//     $vh-context: 667px;
+//     $vw-ratio: calc($px / $vw-context) * 100vw;
+//     $vh-ratio: calc($px / $vh-context) * 100vh;
+//     @return calc(min($vw-ratio, $vh-ratio));
+// }
+
 @function mrem($px) {
-    $vw-context: 370px;
-    $vh-context: 750px;
-    $vw-ratio: calc($px / $vw-context) * 100vw;
-    $vh-ratio: calc($px / $vh-context) * 100vh;
-    @return calc(min($vw-ratio, $vh-ratio));
+    $rem-size: 20px;
+    @return calc($px / $rem-size) * 1rem;
+    @return $px;
 }
